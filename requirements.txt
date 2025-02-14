@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+openai
+chromadb
+faiss-cpu
+pydantic
+python-dotenv
+tiktoken
+fastapi
+uvicorn
+requests
+pydantic

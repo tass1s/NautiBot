@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  chatbot:
+    build: ./ai_services/chatbot
+    ports:
+      - "8001:8000"
+
+  rag_service:
+    build: ./ai_services/rag_service
+    ports:
+      - "8002:8000"
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - chatbot
+      - rag_service
